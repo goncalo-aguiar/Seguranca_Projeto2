@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="css/styles.css" rel="stylesheet" type = "text/css">
+<title>Autenticador</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <!-- <div class="tela-login"> -->
+    <h2>Autenticador</h2>
+  <!-- </div> -->
+</header>
+
+
+<section>
+    
+    
+  <div class="topnav">
+    <a href="http://127.0.0.1:8080/index">Home</a>
+    <a href="#Login">Login</a>
+    <a href="#Contactos">Contactos</a> 
+  </div>
+
+
+
+
+  <section>
+  
+    <section id="login">
+        <h2>
+          Autenticar
+        </h2>
+    </section>
+    <div class="tela-caixas">
+     
+      <form action="authenticate" method="POST">
+        <label for="user">Username:</label><br>
+        <div class="input-login">
+         <input type="text" placeholder="Enter Name" name="user" ><br>
+        </div>
+        <label for="pass">Password:</label><br>
+        <div class="input-login">
+         <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <div class="button">
+          <button type="submit">Login</button> 
+         </div>
+      </form>
+      
+      <small> Informamos que o protocolo de autenticação baseado no MS-CHAP-V2 será executado em seu nome.</small>
+   
+    </div> 
+  <section id="Contactos">
+    <h2>
+      Contactos
+    </h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Nº Mec</th>
+        <th>Contacto</th>
+      </tr>
+      <tr>
+        <td>Ana Miguel</td>
+        <td>98314</td>
+        <td>anamiguel24@ua.pt</td>
+      </tr>
+      <tr>
+        <td>Florentino Sánchez</td>
+        <td>98181</td>
+        <td>florentino@ua.pt</td>
+      </tr>
+      <tr>
+        <td>Gonçalo Aguiar</td>
+        <td>98266</td>
+        <td>gonc.soares12@ua.pt</td>
+      </tr>
+      <tr>
+        <td>Tiago Bastos</td>
+        <td>97590</td>
+        <td>tiagovilar07@ua.pt</td>
+      </tr>
+  
+  </section>
+    
+  
+</section>
+<script>
+  function VerifyData() {
+    var p1 = document.getElementById("newPass").value;
+    var p2 = document.getElementById("newPass2").value;
+    if (p1 != p2) {
+      alert("As passwords não coincidem")
+    }
+  }  
+</script>
+
+
+</body>
+</html>

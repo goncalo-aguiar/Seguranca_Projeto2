@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="css/styles.css" rel="stylesheet" type = "text/css">
+<title>Loja</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Loja Online</h2>
+</header>
+
+<section>
+    
+    
+  <div class="topnav">
+    <a><form action="shop" method="POST">
+         <button type="submit">Home</button> 
+         <input type="hidden" name="user" value=""></input>
+         <input type="hidden" name = "password"value=""></input>
+    </form> </a>
+    <a href="#Reclamacao">Reclamações</a> 
+    <a href="#Contactos">Contactos</a> 
+  </div>
+  
+
+  <section id="Reclamacao">
+   
+      <h2>Deixe uma foto da sua reclamação: </h2>
+      <p>Se as frutas que comprou chegaram a sua casa em mau estado dê upload de uma foto que o comprove para efetuarmos a devolução do dinheiro.</p>
+      <form method="post" action="sendReport" accept=".jpg,.jpeg,.png" enctype="multipart/form-data">
+        <input type="file" name="ficheiro"/>
+        <div class="button">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    
+  </section>
+
+  <section id="Contactos">
+    <h2>
+      Contactos
+    </h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Nº Mec</th>
+        <th>Contacto</th>
+      </tr>
+      <tr>
+        <td>Ana Miguel</td>
+        <td>98314</td>
+        <td>anamiguel24@ua.pt</td>
+      </tr>
+      <tr>
+        <td>Florentino Sánchez</td>
+        <td>98181</td>
+        <td>florentino@ua.pt</td>
+      </tr>
+      <tr>
+        <td>Gonçalo Aguiar</td>
+        <td>98266</td>
+        <td>gonc.soares12@ua.pt</td>
+      </tr>
+      <tr>
+        <td>Tiago Bastos</td>
+        <td>97590</td>
+        <td>tiagovilar07@ua.pt</td>
+      </tr>
+    </table>
+  
+  </section>
+    
+</section>
+
+</body>
+</html>

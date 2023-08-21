@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="css/styles.css" rel="stylesheet" type = "text/css">
+<title>Loja</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Loja Online</h2>
+</header>
+
+<section>
+    
+    
+  <div class="topnav">
+    <a href="#">Home</a>
+    <a href="#Produtos">Produtos</a> 
+    <a href="#Comentarios">Comentarios</a> 
+
+    <a><form action="password" method="POST">
+      <button type="submit">Change password</button>
+ </form> </a>
+ <a><form action="reclamacao" method="POST">
+  <button type="submit">Reclamações</button>
+</form> </a>
+    
+    <script type="text/javascript" src="jscript/index.js"></script>
+    <a> <button onclick="removeHidden()">Contactos</button> </a>
+
+    <div class= "modal hidden" id= "shoppingCart">
+      <div class="modal-header">
+        <div class="titlePop">Contactos</div>
+        <button class="close-button" onclick="addHidden()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <section id="Produtos"> 
+          <div>
+            <table>
+              <tr>
+                <th>Nome</th>
+                <th>Nº Mec</th>
+                <th>Contacto</th>
+              </tr>
+              <tr>
+                <td>Ana Miguel</td>
+                <td>98314</td>
+                <td>anamiguel24@ua.pt</td>
+              </tr>
+              <tr>
+                <td>Florentino Sánchez</td>
+                <td>98181</td>
+                <td>florentino@ua.pt</td>
+              </tr>
+              <tr>
+                <td>Gonçalo Aguiar</td>
+                <td>98266</td>
+                <td>gonc.soares12@ua.pt</td>
+              </tr>
+              <tr>
+                <td>Tiago Bastos</td>
+                <td>97590</td>
+                <td>tiagovilar07@ua.pt</td>
+              </tr>
+            </table>
+          </div> 
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--   <div class="logout">
+      <button class="btn-logout" onclick="logout()">Log out</button> 
+  </div> -->
+
+  <div class = "compras">
+
+    <form role="formP" action="showProducts" method="POST"> 
+      <ul><button class="btn" id="bt">
+        <li>Carrinho de compras</li>
+        <li><img class="carrinho" src="images/carrinho1.png"> </li>
+      </button></ul>
+    </form>
+  </div>
+
+
+
+  <section>
+    <section id="Produtos">
+      <div>
+        <h2>Produtos</h2>
+          
+
+        <hr>
+
+        <h2>Preço: 1$</h2>
+
+
+        <form role="form" action="addProduct" method="GET">
+          <img src="images/banana.png" width="400px" height="300px">  
+          <input type="text" pattern="[0-9]+" oninvalid="setCustomValidity('Só pode inserir números!')" class="form-control" size="7" id="comment-author" placeholder="quantidade" name="quantity" /><br><br>
+          <button type="submit" name="product" value="banana" class="btnAdd btn-primary">Add</button>
+        </form>
+
+       <hr>
+
+       <h2>Preço: 2$</h2>
+
+        <form role="form" action="addProduct" method="GET">
+          <img src="images/maca.png" width="400px" height="300px"> 
+          <input type="text" pattern="[0-9]+" oninvalid="setCustomValidity('Só pode inserir números!')" class="form-control" size="7" id="comment-author" placeholder="quantidade" name="quantity" /><br><br>
+          <button  type="submit" name="product" value="maca" class="btnAdd btn-primary">Add</button>
+        </form>
+
+        <hr>
+
+        <h2>Preço: 3$</h2>
+
+        <form role="form" action="addProduct" method="GET">
+          <img src="images/laranja.png" width="400px" height="300px"> 
+          <input type="text" pattern="[0-9]+" oninvalid="setCustomValidity('Só pode inserir números!')" class="form-control" size="7" id="comment-author" placeholder="quantidade" name="quantity" /><br><br>
+          <button  type="submit" name="product" value="laranja" class="btnAdd btn-primary">Add</button>
+        </form>
+
+        <hr>
+
+        <h2>Preço: 4$</h2>
+
+        <form role="form" action="addProduct" method="GET">
+          <img src="images/pera.png" width="400px" height="300px">
+          <input type="text" pattern="[0-9]+" oninvalid="setCustomValidity('Só pode inserir números!')" class="form-control" size="7" id="comment-author" placeholder="quantidade" name="quantity" /><br><br>
+          <button  type="submit" name="product" value="pera" class="btnAdd btn-primary">Add</button>
+        </form>
+
+        <hr>
+
+        <h2>Preço: 5$</h2>
+
+        <form role="form" action="addProduct" method="GET">
+          <img src="images/manga.png" width="400px" height="300px">  
+          <input type="text" pattern="[0-9]+" oninvalid="setCustomValidity('Só pode inserir números!')" class="form-control" size="7" id="comment-author" placeholder="quantidade" name="quantity" /><br><br>
+          <button type="submit" name="product" value="manga" class="btnAdd btn-primary">Add</button>
+        </form>
+
+        <hr>
+
+        <h2>Preço: 6$</h2>
+
+        <form role="form" action="addProduct" method="GET">
+          <img src="images/kiwi.png" width="400px" height="300px">
+          <input type="text" pattern="[0-9]+" oninvalid="setCustomValidity('Só pode inserir números!')" class="form-control" size="7" id="comment-author" placeholder="quantidade" name="quantity" /><br><br>
+          <button type="submit" name="product" value="kiwi" class="btnAdd btn-primary">Add</button>
+        </form>
+
+        <hr>
+
+
+      </div>
+    </section>
+
+    <section id="Comentarios">
+      <div class="tela-login">
+        <h2>Deixe o seu comentário:</h2>
+        <form role="form" action="addComment" method="GET">
+          <div class="input-login">
+              <label for="comment-message">Message</label><br><br>
+              <textarea class="form-control" id="comment-message" rows="5"  cols="33" placeholder="Your message" name="comment"></textarea><br><br>
+          </div>
+          <div class="button">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      
+      
+      <div>
+        <h2>Comentários dos nossos clientes:</h2>
+        <form role="form" action="showComments" method="POST">
+          <button type="submit" class="btn1 btn-primary">Mostrar Comentarios</button>
+        </form>
+      </div>
+
+    </section>
+    
+  
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="css/styles.css" rel="stylesheet" type = "text/css">
+<title>Loja</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Loja Online</h2>
+</header>
+
+<section>
+    
+    
+  <div class="topnav">
+    <a href="http://127.0.0.1:8080/index">Home</a>
+    <a href="#Login">Login</a>
+    <a href="#CriarConta">CriarConta</a> 
+    <a href="#Contactos">Contactos</a> 
+  </div>
+
+
+
+
+  <section>
+  
+    <section id="login">
+        <h2>
+         Login
+        </h2>
+    </section>
+    <div class="tela-login">
+     
+      <form action="shop" method="POST">
+        <label for="user">Username:</label><br>
+        <div class="input-login">
+         <input type="text" placeholder="Enter Name" name="user" ><br>
+        </div>
+        <label for="pass">Password:</label><br>
+        <div class="input-login">
+         <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <div class="button">
+          <button type="submit">Login</button> 
+         </div>
+      </form>
+      
+      
+
+      
+      
+      
+  
+    </div> 
+
+
+
+    <section id="CriarConta">
+      <div>
+          <h2>
+             Criar Conta
+          </h2>
+          <div class="tela-login">
+            <form role="form" action="addUser" method="POST">
+              <label for="user">Escolha um username:</label><br>
+              <div class="input-login">
+              <input type="text" placeholder="Enter Name" name="user" id="newUser" ><br>
+              </div>
+              <label for="pass">Escolha uma password:</label><br>
+              <div class="input-login">
+              <input type="password" placeholder="Enter Password" id="newPass" name="password" required>
+              </div>
+              <label for="pass">Confirme a password:</label><br>
+              <div class="input-login">
+              <input type="password" placeholder="Confirm Password" id="newPass2" name="password2" required>
+              </div>
+              <script></script>
+              <div class="button">
+              <button type="submit" onclick="VerifyData()" >Sign Up</button> 
+              </div>
+              </form>
+              {}
+          </div>
+     </div>
+    </section>
+  <section id="Contactos">
+    <h2>
+      Contactos
+    </h2>
+    <p>
+      Ana Miguel, n_mec: 98314 <br>
+      Florentino Sánchez, n_mec: 98181 <br>
+      Gonçalo Aguiar, n_mec: 98266 <br>
+      Tiago Bastos, n_mec: 97590
+    </p>
+  
+  </section>
+    
+  
+</section>
+<script
+  src = "jscript/index.js" >
+</script>
+
+
+</body>
+</html>

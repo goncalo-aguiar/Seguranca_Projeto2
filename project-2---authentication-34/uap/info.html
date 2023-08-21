@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="css/styles.css" rel="stylesheet" type = "text/css">
+<title>Autenticador</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Autenticador</h2>
+</header>
+
+<section>
+    
+    
+  <div class="topnav">
+    <a href="#">Home</a>
+    <a href="#Contas">Contas</a>
+    <a href="#NovaContas">Nova Conta</a> 
+
+    
+  
+    
+
+  </div>    
+    
+  
+  <section id="Contas">
+    <div class="tela-caixas">
+      <h2> As minhas contas e palavras-chave: </h2>
+    </div>
+    {}
+    
+    <form role="form" action="input_senha" method="POST">
+      <button type="submit" >Desencriptar contas e senhas dos dominios </button> 
+    </form>
+  </section>
+
+  <section id="NovaContas">
+    <div class= "tela-caixas">
+        <h2>
+          Adicionar nova palavra-chave:
+        </h2>
+        <div>
+          <form role="form" action="addAccount" method="POST">
+            <label for="user">Nome do site/aplicação:</label><br>
+            <div class="input-login">
+            <input type="text" placeholder="Enter Name" name="dns" ><br>
+            </div>
+
+            <label for="user">Nome do utilizador:</label><br>
+            <div class="input-login">
+            <input type="text" placeholder="Enter Name" name="user" id="newUser" ><br>
+            </div>
+
+            <label for="pass">Insira a password:</label><br>
+            <div class="input-login">
+            <input type="password" placeholder="Enter Password" id="newPass" name="password" required>
+            </div>
+            <label for="pass">Confirme a password:</label><br>
+            <div class="input-login">
+            <input type="password" placeholder="Confirm Password" id="newPass2" name="password2" required>
+            </div>
+            <script></script>
+            <div class="button">
+            <button type="submit" onclick="VerifyData()"> Adicionar </button> 
+            </div>
+            </form>
+        </div>
+   </div>
+  </section>
+
+
+
+</section>
+
+</body>
+</html>
